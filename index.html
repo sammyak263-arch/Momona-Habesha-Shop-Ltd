@@ -3,40 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <title>Momona Habesha Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6f5f5; /* lighter bluey-green */
+    }
+    header, footer {
+      background-color: #064e4e; /* deep dark bluey-green */
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1em;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+    }
+    .product-card {
+      background-color: #a3d2d2; /* lighter bluey-green card */
+      border-radius: 15px;
+      width: 250px;
+      padding: 15px;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product-card h3 {
+      margin: 10px 0 5px;
+      color: #064e4e;
+    }
+    .product-card p {
+      margin: 5px 0;
+      color: #003737;
+      font-size: 0.9em;
+    }
+    .contact {
+      padding: 25px 10px;
+      text-align: center;
+      background-color: #cce7e7; /* slightly lighter for contact section */
+      color: #064e4e;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #fff8f0; margin:0; padding:0;">
+<body>
 
-  <header style="text-align:center; padding:20px; background-color:#d65a31; color:white;">
+  <!-- Header -->
+  <header>
     <h1>Momona Habesha Shop</h1>
     <p>Habesha dresses, shoes, accessories, hair products, and cultural items</p>
   </header>
 
   <!-- Products Section -->
-  <section id="products" style="padding: 40px 20px; text-align: center;">
-    <h2 style="color: #d65a31; margin-bottom: 30px;">Cultural Accessories</h2>
+  <section class="products">
 
-    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-
-      <div class="product" style="background-color: #fff3e6; padding: 15px; border-radius: 15px; width: 250px;">
-        <img src="images/boon-set.jpg" alt="Boon Set" style="width: 100%; border-radius: 10px;" />
-        <h3 style="color: #d65a31; margin-top: 10px;">Boon Set</h3>
-        <p style="color: #333;">Elegant Habesha textile set, perfect as cultural accessories.</p>
-      </div>
-
-      <div class="product" style="background-color: #e6f7ff; padding: 15px; border-radius: 15px; width: 250px;">
-        <img src="images/bracelet.jpg" alt="Traditional Bracelet" style="width: 100%; border-radius: 10px;" />
-        <h3 style="color: #1a73e8; margin-top: 10px;">Traditional Bracelet</h3>
-        <p style="color: #333;">Handmade bracelet, stylish and culturally inspired.</p>
-      </div>
-
-      <div class="product" style="background-color: #f0ffe6; padding: 15px; border-radius: 15px; width: 250px;">
-        <img src="images/necklace.jpg" alt="Colorful Necklace" style="width: 100%; border-radius: 10px;" />
-        <h3 style="color: #4caf50; margin-top: 10px;">Colorful Necklace</h3>
-        <p style="color: #333;">Unique necklace with vibrant colors, perfect for any outfit.</p>
-      </div>
-
+    <div class="product-card">
+      <img src="images/nestelas.jpg" alt="Nestelas">
+      <h3>Nestelas / ነስቴላስ</h3>
+      <p>Beautiful traditional women’s dresses.<br>ናይ ሴቶት መደበኛ ልብስ ፍቅሪ እዩ።</p>
     </div>
+
+    <div class="product-card">
+      <img src="images/injera.jpg" alt="Injera">
+      <h3>Injera / እንጀራ</h3>
+      <p>Soft and fresh injera, a staple of Habesha cuisine.<br>ዋዕላ እና ሓርነት ዝበለ እንጀራ።</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/zuryas.jpg" alt="Zuryas">
+      <h3>Zuryas / ዙርያስ</h3>
+      <p>Traditional men’s shoes, stylish and comfortable.<br>ናይ ወንድ ስራሕ ጫማታት መደበኛ፣ ብተስፋር እና ሓርነት ዝበለ።</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/shifons.jpg" alt="Shifons">
+      <h3>Shifons / ሸፎንስ</h3>
+      <p>Elegant women’s shifon dresses for special occasions.<br>ብተስፋር ናይ ሴቶት ሸፎን ልብስ ምግባር ክሳብ ዝረኸበሉ።</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/hair-products.jpg" alt="Hair Products">
+      <h3>Hair Products / ራሕን ምርቶታት</h3>
+      <p>Hair care products for healthy, shiny hair.<br>ናይ ራሕን ጥራሕ እና ምሕባር ናይ ራሕን መጠባበቂ ምርቶታት።</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/fake-hair.jpg" alt="Fake Hair">
+      <h3>Fake Hair / እንጻው ጸጉር</h3>
+      <p>Stylish and natural-looking extensions.<br>ብተስፋር እና ብትኽክል ዝመስል ጸጉር እና ምእንቲ ዝገበር እንጻው።</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/jebenas.jpg" alt="Jebenas">
+      <h3>Jebenas / ጀበናስ</h3>
+      <p>Traditional Habesha coffee pots for ceremonies.<br>ናይ ሓበሻ ቡን ቦታታት ምግባር ክሳብ ዝረኸበሉ።</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/boon-set.jpg" alt="Boon Set">
+      <h3>Boon Set / ቡን ሰት</h3>
+      <p>Elegant cultural textile accessory sets.<br>ብተስፋር ናይ ሕብረት ንጥፈታት መደበኛ ምርቶታት።</p>
+    </div>
+
   </section>
+
+  <!-- Contact Section -->
+  <footer>
+    <div class="contact">
+      <p>📞 +44 7983 119329</p>
+      <p>🏠 Sherborne Street, Cheetah Hill, Manchester, M3 1FE</p>
+      <p>🕒 Monday – Sunday: 12pm – 8pm</p>
+    </div>
+    <p>&copy; 2026 Momona Habesha Shop</p>
+  </footer>
 
 </body>
 </html>
